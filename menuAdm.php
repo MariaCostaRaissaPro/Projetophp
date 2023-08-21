@@ -1,5 +1,4 @@
 
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="background-color: #198754;">
         <a class="navbar-brand" href="index.php" style="color:white;">Home</a>
@@ -15,34 +14,12 @@
                         aria-expanded="false" style="color:white;">
                         Minha conta
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="formCliente.php" >Cliente</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="formVisitante.php">Visitante</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="formAdm.php">ADM</a></li>
-
-                    </ul>
+                  
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="frutas.php"style="color:white;">Frutas</a>
+                    <a class="nav-link" href="cadastrodeimagem.php"style="color:white;">Cadastro de imagem</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="verduras.php"style="color:white;">Verduras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="legumes.php"style="color:white;">Legumes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sobre.php"style="color:white;">Sobre nós</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ajuda.php"style="color:white;">Ajuda</a>
-                </li>
+               
             </ul>
             
             <form class="d-flex" role="search">
