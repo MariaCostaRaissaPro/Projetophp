@@ -46,9 +46,13 @@ $diretorio = "./img/"; // esta linha não precisas é só um exemplo do conteudo
 // selecionar só .jpg
 $imagens = glob($diretorio . "*.jpg");
 
+$cont=0;
 // fazer echo de cada imagem
 foreach($imagens as $imagem){
+  $cont++;
+  if($cont%6==0){
   echo '<br>';  
+  }
   echo '<a href=""><img  src="'.$imagem.'" /></a>';
 }
 ?>
