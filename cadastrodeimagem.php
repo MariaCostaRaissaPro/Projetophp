@@ -29,8 +29,15 @@
 
 <form method="POST" action="enviar.php" enctype="multipart/form-data" style='text-align:center';> 
 
+
+    <label for="id">Id Imagem</label>
+    <input type="text" name="id">
+    <br>
     <label for="nome">Nome da Imagem</label>
     <input type="text" name="nome">
+    <br>
+    <label for="descricao">Descrição de Imagem</label>
+    <input type="text" name="descricao">
     <br>
     <label for="preco">Preço</label>
     <input type="number" name="preco">

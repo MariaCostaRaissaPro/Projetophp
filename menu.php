@@ -38,10 +38,10 @@
                     <a class="nav-link" href="legumes.php"style="color:white;">Legumes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sobre.php"style="color:white;">Sobre nós</a>
+                    <a class="nav-link" href="quemsomos.php"style="color:white;">Quem somos?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ajuda.php"style="color:white;">Ajuda</a>
+                    <a class="nav-link" href="ajuda.php"style="color:white;">Ajuda?</a>
                 </li>
             </ul>
             

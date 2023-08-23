@@ -13,6 +13,7 @@
 <body>
 <?php include 'menu.php'; ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -238,7 +239,7 @@
     </div>
     <div class="col-md-4">
       <div class="card" style="width: 18rem;">
-        <img src="img/mexirica" alt="Card image cap">
+        <img src="img/mexerica" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">Mexerica - KG </p>
           <a href="#" class="btn btn-primary">R$10,50</a>
@@ -264,6 +265,7 @@
 </body>
 </html>
 <?php include 'rodape.php'; ?>
+
 
 </body>
 </html>
