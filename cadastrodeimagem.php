@@ -47,22 +47,6 @@
      <button type="submit">Enviar imagem</button>
 </form>
 
-<?php
-$diretorio = "./img/"; // esta linha não precisas é só um exemplo do conteudo que a variável vai ter
-
-// selecionar só .jpg
-$imagens = glob($diretorio . "*.jpg");
-
-$cont=0;
-// fazer echo de cada imagem
-foreach($imagens as $imagem){
-  $cont++;
-  if($cont%6==0){
-  echo '<br>';  
-  }
-  echo '<a href=""><img  src="'.$imagem.'" /></a>';
-}
-?>
 
 <?php include 'rodape.php'; ?>
     

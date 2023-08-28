@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +9,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
-  <title>Home - SR Alimentos</title>
+  <title>Categorias - SR Alimentos</title>
 </head>
-<body>
 
-<?php include 'menu.php'; ?>
-<div style="text-align:center">
-<br>
-<img src="img/logo.jpeg" >
-<br>
-&nbsp;
-<h1 style="font:lato">Seja bem vindo ao Hortifruti online!</h1>
-&nbsp;
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<?php
+include 'conexao.php';
+
+$data = $conn->query("SELECT * FROM produto")->fetchAll();
+// and somewhere later:
+foreach ($data as $row) {
+    echo("Nome produto:");
+    echo $row['nome']."<br />\n";
+    echo("Preço produto:");
+    echo $row['preco']."<br />\n";
+    echo("Descrição produto:");
+    echo $row['descricao']."<br />\n";
+   
+    echo "<img src='img/".$row['nome_arq'].".".$row['ext_arq']."'>";
+}
+?>
 <?php include 'rodape.php'; ?>
-</body>
-</html>

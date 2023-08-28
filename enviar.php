@@ -4,9 +4,9 @@
  {
     $ext = strtolower(substr($_FILES['imagem']['name'],-4)); //Pegando extensão do arquivo
 		
-    $new_name = date("Y.m.d-H.i.s") . $ext; 
-    $dir = './img/'; 
-    move_uploaded_file($_FILES['imagem']['tmp_name'], $dir.$new_name); 
+    $new_name = date("Y.m.d-H.i.s"); 
+    $dir = 'img/'; 
+    move_uploaded_file($_FILES['imagem']['tmp_name'], $dir.$new_name.".".$ext); 
     
 	$id = $_POST["id"];
 	$nome = $_POST["nome"];

@@ -13,9 +13,7 @@
 <body>
 <?php include 'menu.php'; ?>
 <h1 style='text-align:center; color: #198754;'; >QUEM SOMOS?</h1>
-
-<h2><b> SR Alimentos</b></h2>
-<h3> oi </h3>
+<h4 style='text-align:center;'> A SR Alimentos é mais do que apenas um hortifruti, somos uma promessa de qualidade, sustentabilidade e nutrição para a sua família. Fundada em 2020, com a paixão por proporcionar produtos frescos, cultivados com cuidado e amor pela natureza, a nossa jornada começou com a visão de trazer a frescura dos campos diretamente para a sua mesa. </h4>
 
 
 
