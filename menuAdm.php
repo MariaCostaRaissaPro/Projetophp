@@ -20,6 +20,10 @@
                     <a class="nav-link" href="cadastrodeimagem.php"style="color:white;">Cadastro de imagem</a>
                 </li>
                
+                <li class="nav-item">
+                    <a class="nav-link" href="consultaimagem.php"style="color:white;">Consulta de imagem</a>
+                </li>
+               
             </ul>
             
             <form class="d-flex" role="search">

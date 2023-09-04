@@ -13,7 +13,11 @@
 <body>
 <?php include 'menu.php'; ?>
 <h1 style='text-align:center; color: #198754;'; >QUEM SOMOS?</h1>
-<h4 style='text-align:center;'> A SR Alimentos é mais do que apenas um hortifruti, somos uma promessa de qualidade, sustentabilidade e nutrição para a sua família. Fundada em 2020, com a paixão por proporcionar produtos frescos, cultivados com cuidado e amor pela natureza, a nossa jornada começou com a visão de trazer a frescura dos campos diretamente para a sua mesa. </h4>
+&nbsp;
+<h4 style='text-align:center;'> A SR Alimentos teve início no ano de 2012, com a ideia de facilitar a vida dos consumidores de legumes como abóbora cabotia, mandioca, couve entre outros... 
+O proprietário Rodrigo Procópio começou a processar esses alimentos que entregava de porta em porta ,com isso percebeu que foi vendido muito rápido e que as pessoas gostaram do produto.
+
+Então ele ,sua esposa e seu filho começaram a produzir os produtos de uma maneira artesanal , utilizando o compressor de ar da geladeira para gerar o vácuo    </h4>
 
 
 

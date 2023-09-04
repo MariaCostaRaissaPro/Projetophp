@@ -40,7 +40,7 @@
     <input type="text" name="descricao">
     <br>
     <label for="preco">Preço</label>
-    <input type="number" name="preco">
+    <input type="text" name="preco">
    <br>
    <label for="conteudo">Enviar imagem:</label>
    <input type="file" name="imagem" accept="image/*">    
