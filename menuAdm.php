@@ -23,6 +23,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="consultaimagem.php"style="color:white;">Consulta de imagem</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="consultaimagemfiltro.php"style="color:white;">Buscar produto</a>
+                </li>
+               
+
+                 <li class="nav-item">
+                    <a class="nav-link" href="cadastro.php"style="color:white;">Cadastro</a>
+                </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link" href="login.php"style="color:white;">Login</a>
+                </li>
                
             </ul>
             

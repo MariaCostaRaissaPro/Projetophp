@@ -32,6 +32,9 @@
                     <a class="nav-link" href="categorias.php"style="color:white;">Categorias</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="consultaimagemfiltro.php"style="color:white;">Buscar produto</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="frutas.php"style="color:white;">Frutas</a>
                 </li>
                 <li class="nav-item">

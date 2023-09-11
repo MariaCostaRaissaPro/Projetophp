@@ -17,6 +17,7 @@
 <?php include 'menuAdm.php'; ?>
 <div style="text-align:center">
 <h1 style="font:lato">Seja bem vindo ADM!</h1>
+<img src="img/logo.jpeg" >
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
