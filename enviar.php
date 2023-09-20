@@ -11,14 +11,15 @@
 	$id = $_POST["id"];
 	$nome = $_POST["nome"];
     $preco = $_POST["preco"];
-	$descricao = $_POST["descricao"];
+    $descricao = $_POST["descricao"];
+    $categoria = $_POST["id"];
    
     include 'conexao.php';
 	// usar o comando que eu já passei - Inserção - INSERT INTO................
 	//insert into produto values ($id,$nome,$preco,$descricao,$new_name,$ext);
 	try {
-        $sql = "INSERT INTO produto (id, nome,preco, descricao,nome_arq,ext_arq)
-        VALUES ('$id', '$nome', '$preco', '$descricao', '$new_name', '$ext')";
+        $sql = "INSERT INTO produto (id, nome,preco, descricao,nome_arq,ext_arq,categoria_id)
+        VALUES ('$id', '$nome', '$preco', '$descricao', '$new_name', '$ext','$categoria')";
         // use exec() because no results are returned
         $conn->exec($sql);
         echo "Novo registro criado com sucesso";

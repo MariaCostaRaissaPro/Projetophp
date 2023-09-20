@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,47 +9,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
   <title>Ajuda - SR Alimentos</title>
-</head>
-<body>
-<?php include 'menu.php'; ?>
-
-
-<body style="text-align:center; ">
-  <form action="cadastrocliente.php" method="POST">
-
-    <div class="mb-3" >
-      <label for="nome" class="form-label">Nome</label>
-      <input type="text" name="nome" id="nome" >
-    </div>
+  <style>
     
-    <label for="email" class="form-label">Email</label>
-      <input type="text" name="email" id="email" >
-    </div>
-    <br>
-    
+	 body {background-image: url("img/logosc.jpg");}
    
-    <label for="telefome" class="form-label">Telefone</label>
-      <input type="text" name="telefone" id="telefone" >
-    </div>
-    <br>
-    <label for="coment" class="form-label">Comentário</label>
+   }
+    </style>
+</head>
+
+
+<?php include 'menu.php'; ?>
+<h1>Tire aqui suas dúvidas</h1>
+
+<body style="text-align:center; "background-image: url("img/logosc.jpg"); ">
+  <form action="cadastrocliente.php" method="POST" style="border: 1px solid black; width: 200px; margin: auto;">
+
+    
+    <label for="coment" class="form-label">COMENTÁRIO</label>
       <input type="text" name="coment" id="coment" >
     </div>
     &nbsp;
-    <br>
-    
+    &nbsp;
     <input type="submit" value="ENVIAR"><br>
     &nbsp;
     </form>
     &nbsp;
     &nbsp;
-    &nbsp;
-
-
-
-
-
-
+    
 
 <?php include 'rodape.php'; ?>

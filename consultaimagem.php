@@ -22,6 +22,8 @@
       width: 300px;
        height: 200px;"
      }
+
+	 body {background-image: url("img/logosc.jpg");}
     </style>
 </head>
 <body>

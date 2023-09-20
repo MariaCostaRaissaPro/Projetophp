@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
   <title>Categorias - SR Alimentos</title>
+ 
 </head>
-
+<body style="background-image: url(img/logosc.jpg");>
+<?php include 'menu.php'; ?>
 <?php
 include 'conexao.php';
 
@@ -28,4 +32,5 @@ foreach ($data as $row) {
     echo "<img src='img/".$row['nome_arq'].".".$row['ext_arq']."'>";
 }
 ?>
+</body>
 <?php include 'rodape.php'; ?>

@@ -14,6 +14,15 @@
                         aria-expanded="false" style="color:white;">
                         Minha conta
                     </a>
+                    <ul class="dropdown-menu"  style="background-color: #198754;">
+                        <li><a class="dropdown-item" href="formCliente.php" >Cliente</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        
+                        <li><a class="dropdown-item" href="formAdm.php">ADM</a></li>
+
+                    </ul>
                   
                 </li>
                 <li class="nav-item">
@@ -23,10 +32,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="consultaimagem.php"style="color:white;">Consulta de imagem</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="consultaimagemfiltro.php"style="color:white;">Buscar produto</a>
-                </li>
-               
+                
 
                  <li class="nav-item">
                     <a class="nav-link" href="cadastro.php"style="color:white;">Cadastro</a>

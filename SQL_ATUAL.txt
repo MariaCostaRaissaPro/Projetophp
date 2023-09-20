@@ -1,0 +1,54 @@
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
+
+CREATE SCHEMA IF NOT EXISTS `sistema` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
+USE `sistema` ;
+
+-- -----------------------------------------------------
+-- Table `sistema`.`categoria`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `sistema`.`categoria` (
+  `id` INT NOT NULL ,
+  `nome` VARCHAR(50) NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `sistema`.`produto`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `sistema`.`produto` (
+  `id` INT NOT NULL ,
+  `nome` VARCHAR(50) NOT NULL ,
+  `preco` FLOAT NOT NULL ,
+  `descricao` VARCHAR(50) NOT NULL ,
+  `nome_arq` VARCHAR(100) NOT NULL ,
+  `ext_arq` VARCHAR(5) NOT NULL ,
+  `categoria_id` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_produto_categoria` (`categoria_id` ASC) ,
+  CONSTRAINT `fk_produto_categoria`
+    FOREIGN KEY (`categoria_id` )
+    REFERENCES `sistema`.`categoria` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `sistema`.`usuarios`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `sistema`.`usuarios` (
+  `id` INT NOT NULL ,
+  `nome` VARCHAR(50) NOT NULL ,
+  `email` VARCHAR(100) NOT NULL ,
+  `senha` VARCHAR(225) NOT NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
