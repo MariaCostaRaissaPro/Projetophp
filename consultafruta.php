@@ -1,10 +1,11 @@
-<?php include 'menuCli.php'; ?>
+<?php include 'menu.php'; ?>
 <html lang="en">
 <head>
+    <body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LEGUMES - Sr Alimentos</title>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>FRUTAS - Sr Alimentos</title>
     <style>
      img {
       width: 400px;
@@ -15,7 +16,6 @@
      img.hover-effect:hover {
       transform: scale(1.1);
      }
-
     </style>
 </head>
 
@@ -24,7 +24,7 @@ include('conexao.php');
 $diretorio = "img/";
 
 // Fazer uma consulta SQL para obter todos os produtos
-$sql = "SELECT id, nome, preco, descricao, nome_arq, ext_arq FROM produto WHERE categoria_id=3";
+$sql = "SELECT id, nome, preco, descricao, nome_arq, ext_arq FROM produto WHERE categoria_id=2";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 
@@ -38,20 +38,20 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
     $imagemPath = $diretorio . $nome_arc;
 
-
     echo '
-        <div class="card" style="width: 260px; display: inline-block; text-align:center;">
-            <img src="' . $imagemPath . '" class="card-img-top hover-effect" alt="">
-            <div class="card-body">
-                <h5 class="card-title">' . $nome . '</h5>
-                <p class="card-text">Preço: R$' . $preco . '</p>
-                <a href="carrinho.php?add_to_cart=' . $id . '" class="btn btn-primary">COMPRAR</a>
-            </div>
-        </div>';
+    <div class="card" style="width: 260px; display: inline-block; text-align:center;">
+        <img src="' . $imagemPath . '" class="card-img-top hover-effect" alt="">
+        <div class="card-body">
+            <h5 class="card-title">' . $nome . '</h5>
+            <p class="card-text">Preço: R$' . $preco . '</p>
+            <a href="carrinho.php?add_to_cart=' . $id . '" class="btn btn-primary">COMPRAR</a>
+        </div>
+    </div>';
 }
 
 $stmt->closeCursor();
 ?>
 
+</body>
 </html>
 <?php include 'rodape.php'; ?>

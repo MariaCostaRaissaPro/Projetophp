@@ -20,7 +20,7 @@
     </style>
 
 </head>
-<?php include('menu.php'); ?>
+<?php include('menuCli.php'); ?>
 <body>
   <?php
 
@@ -89,10 +89,6 @@ $conn->close();
 
 ?>
 
-
-
 </body>
-
 </html>
-
 <?php include 'rodape.php'; ?>

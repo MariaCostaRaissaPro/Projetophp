@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="background-color: #198754;">
     <a class="nav-link dropdown-toggle" href="index.php" role="button" data-bs-toggle="dropdown"
@@ -12,7 +11,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                
+                <li class="nav-item dropdown">
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastrodeimagem.php" style="color:white; font-weight: bold;">CADASTRO DE IMAGEM</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="consultaimagem.php"style="color:white; font-weight: bold;">CONSULTA DE IMAGEM</a>
+                </li>
                 
 
             </ul>

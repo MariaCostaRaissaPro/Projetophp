@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +10,7 @@
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <title>ENVIAR - Sr Alimentos</title>
+  <title>CADASTRAR CLIENTE - Sr Alimentos</title>
   <style>
     body {
       background-image: url("imglogo/logosc.jpg");
@@ -51,46 +49,47 @@
   </style>
 </head>
 
-<?php include 'menuadm2.php'?>
+<?php include 'menuCli.php'?>
 <?php
-include "conexao.php";
- if(isset($_FILES['imagem']))
- {
-    $ext = strtolower(substr($_FILES['imagem']['name'],-4)); //Pegando extensão do arquivo
-		
-    $new_name = date("Y.m.d-H.i.s"); 
-    $dir = 'img/'; 
-    move_uploaded_file($_FILES['imagem']['tmp_name'], $dir.$new_name.$ext); 
-    
-	$id = $_POST["id"];
-	$nome = $_POST["nome"];
-    $preco = $_POST["preco"];
-    $descricao = $_POST["descricao"];
-    $categoria = $_POST["categoria_id"];
-	// usar o comando que eu já passei - Inserção - INSERT INTO................
-	//insert into produto values ($id,$nome,$preco,$descricao,$new_name,$ext);
-	try {
-        $sql = "INSERT INTO produto (id, nome,preco, descricao,nome_arq,ext_arq,categoria_id)
-        VALUES ('$id', '$nome', '$preco', '$descricao', '$new_name', '$ext','$categoria')";
-        // use exec() because no results are returned
-        $conn->exec($sql);
-        
-    } catch (PDOException $e) {
-        echo $sql . "<br>" . $e->getMessage();
-    }
-    
-    $conn = null;
-	
+// Conexão com o banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "sistema";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar a conexão
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
+
+// Obter os dados do formulário
+
+$nome = $_POST["nome"];
+$CPF = $_POST["CPF"];
+$email= $_POST["email"];
+$senha = $_POST["senha"];// Criptografar a senha
+
+// Inserir os dados no banco de dados
+$sql = "INSERT INTO cliente (nome, CPF, email, senha) VALUES ('$nome', '$CPF', '$email', '$senha')";
+
+if  ($conn->query($sql) === TRUE) {
     echo "
     
     <div class='conteudo container'>
     <div class='cadastro'>
-    <p id='cadastro'>Novo registro realizado com sucesso!</p>
+    <p id='cadastro'>Cadastro realizado com sucesso!</p>
     </div>
     </div>
     " ;
- } 
+} else {
+    echo "Erro ao cadastrar: " . $conn->error;
+}
+
+$conn->close();
 ?>
+
 
 
 </body>

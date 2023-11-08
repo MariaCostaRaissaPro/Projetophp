@@ -10,7 +10,7 @@
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <title>FORMULÁRIO ADM - SR Alimentos</title>
+  <title>USUÁRIO - Sr Alimentos</title>
   <style>
     body {
       background-image: url("imglogo/logosc.jpg");
@@ -31,30 +31,40 @@
   </style>
 </head>
 <body style="text-align:center; ">
-
-<?php include 'menuAdm.php'; ?>
-
-  <h1 style='color:#1c8454;'>ACESSE SUA CONTA</h1>
-
+<?php include 'menu.php'; ?>
+<?php include 'conexao.php'; ?>
 <div class="conteudo container">
   <div class="row">
     <div class="col-sm-8 mx-auto p-3 border border-success mt-3 rounded">
+
+  <h1 style='color:#1c8454;'>CADASTRE-SE</h1>
+  
+  <form method="post" action="cadastrarclli.php" >
+
     
-  <form method="post" action="loginAdm.php" >
+
+    <div class="mb-3">
+    <label for="nome" class="form-label" style='font-weight: bold';>NOME</label>
+    <input type="text" name="nome"   class="form-control">
+    </div>
+
+<div class="mb-3">
+    <label for="CPF" class="form-label" style='font-weight: bold';>CPF</label>
+    <input type="text" name="CPF"  class="form-control">
+    </div>
 
     <div class="mb-3">
     <label for="email" class="form-label" style='font-weight: bold';>EMAIL</label>
-    <input type="text" name="email" id="email"  class="form-control">
+    <input type="text" name="email"  class="form-control">
     </div>
 
     <div class="mb-3">
     <label for="senha" class="form-label" style='font-weight: bold';>SENHA</label>
-    <input type="password" name="senha" id="senha" class="form-control">
-
+    <input type="text" name="senha"   class="form-control">
     </div><br>
 
     <div class="mb-3">
-      <input type="submit" value="ENTRAR"  class="btn btn-success">
+      <input type="submit" value="SALVAR"  class="btn btn-success">
     </div>
     
   </form>
@@ -64,7 +74,7 @@
   
 </div>
 
- 
+   
 </body>
 
 </html>

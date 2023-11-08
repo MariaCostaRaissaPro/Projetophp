@@ -11,7 +11,7 @@
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
-  <title>Categorias - SR Alimentos</title>
+  <title>CATEGORIAS - SR Alimentos</title>
  
 </head>
 <body style="background-image: url(img/logosc.jpg");>

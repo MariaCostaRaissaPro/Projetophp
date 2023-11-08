@@ -1,4 +1,4 @@
-<?php include 'menuCli.php'; ?>
+<?php include 'menu.php'; ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
